@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Standings</title>
+</head>
+<body>
+    <h1>Standings</h1>
+    <ul>
+        {% for player in players %}
+            <li>{{ player.name }} - Rating: {{ player.rating }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Home</a>
+</body>
+</html>

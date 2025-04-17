@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pairings</title>
+</head>
+<body>
+    <h1>Pairings</h1>
+    <ul>
+        {% for p1, p2 in pairings %}
+            <li>{{ p1.name }} vs {{ p2.name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/standings">Standings</a>
+</body>
+</html>
